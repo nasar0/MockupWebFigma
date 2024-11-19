@@ -39,8 +39,31 @@ a,h1,h2,h3,h4{
     background: #C0392B;
     border: solid 2px #C0392B;
 }
+.botonRojo{
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #C0392B;
+    border: solid 2px #C0392B;
+    border-radius: 20px;
+    padding: 1% 2%;
+    
+}
+.botonRojo:hover{
+    color: #C0392B;
+    background: #FFFFFF;
+    border: solid 2px #C0392B;
+}
 .botonV{
-
+    color: #ffffff;
+    background: #27ae5fcb;
+    border: solid 2px #27ae5fcb;
+    border-radius: 20px;
+    padding: 1% 2%;
+}
+.botonV:hover{
+    color: #27ae5fcb;
+    background: #ffffff;
+    border: solid 2px #27ae5fcb;
 }
 p{
     font-family: "Open Sans", sans-serif;
@@ -91,7 +114,7 @@ main{
             }
             div:nth-child(2){
                 h2{
-                    margin: 3% 0;  
+                    margin: 3% 0; 
                 }
                 p{
                     display: block; 
@@ -109,15 +132,33 @@ main{
             }
         }
     }
-    section:nth-child(3){
-        h2{
-            text-align: center;
-        }
-        >div{
-            div:nth-child(2){
-                display: flex;
-            }
-        }
-        
-    }
+}
+
+#flor h2{
+    text-align: center;
+    color: #2C3E50;
+}
+#flor > div> div{
+    display: flex;
+
+}
+#flor > div> div>div{
+    width: 40%;
+    margin: auto;
+}
+#flor p{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: justify;
+}
+#florexotica h2{
+    text-align: center;
+    color: #2C3E50;
+}
+#florexotica > div{
+    display: flex;
+}
+#florexotica >div> div:nth-child(2){
+    width: 100%;
 }
