@@ -20,7 +20,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="historia">
             <div class="container">
                 <h1>CONOCE NUESTRA HISTORIA</h1>
                 <p>Hola, soy Mari, la fundadora de Floristerías Mari. Mi amor por las flores comenzó en el jardín de mi abuela, donde pasaba horas rodeada de colores y fragancias. Desde pequeña, aprendí que cada flor tiene su propio significado y puede transmitir emociones profundas.</p>
@@ -29,23 +29,27 @@
                 <p>Cada cliente que entra por la puerta recibe una cálida bienvenida. Me encanta conocer sus historias, saber para qué ocasión buscan flores y ayudarles a crear ramos únicos. Mi equipo y yo nos esforzamos por recordar los nombres y preferencias de nuestros clientes; así, cada visita se siente especial.</p>
             </div>
         </section>
-        <section>
+        <section class="flor segunda">
             <h2>COSAS HECHAS POR NOSOTROS</h2>
             <div class="container">
                 <div>
-                    <div><p>Arreglo de Rosas Rojas: Este elegante ramo presenta vibrantes rosas rojas, símbolo de amor y pasión, acompañado de eucalipto verde y otras hojas frescas. Ideal para expresar sentimientos profundos y románticos, es una opción clásica y sofisticada para cualquier ocasión especial.</p><a href="" class="botonV">Reservar</a></div>
+                    <div><p>Arreglo de Rosas Rojas: Este elegante ramo presenta vibrantes rosas rojas, símbolo de amor y pasión, acompañado de eucalipto verde y otras hojas frescas. Ideal para expresar sentimientos profundos y románticos, es una opción clásica y sofisticada para cualquier ocasión especial.</p>
+                    <br>
+                    <a href="" class="botonV">Reservar</a></div>
                     <div><img src="img/pg2/Afrodita-frontal-1-363x363 1.png" alt=""></div>
                 </div>
                 <div>
                     <div><img src="img/pg2/Anne-frontal-1-363x363 1.png" alt=""></div>
                     <div>
                         <p>Arreglo de Rosas Durazno: Delicado y lleno de encanto, este arreglo incluye rosas de un suave tono durazno, acompañadas de follaje verde y detalles de pequeñas flores complementarias. Perfecto para transmitir ternura y calidez, este ramo es ideal para celebraciones alegres o para expresar gratitud.</p>
+                        <br>
                         <a href="" class="botonV">Reservar</a>
                     </div>
                 </div>
                 <div>
                     <div>
                         <p>Arreglo de Rosas Blancas con Detalles Rojos: Este ramo combina la elegancia de las rosas blancas, que simbolizan pureza y admiración, con toques de flores rojas de aspecto exótico. El follaje verde y las ramas de eucalipto añaden un toque natural y fresco, creando un arreglo ideal para ocasiones que requieren un gesto refinado y sofisticado.</p>
+                        <br>
                         <a href="" class="botonV">Reservar</a>
                     </div>
                     <div><img src="img/pg2/Elsa-frontal-1-363x363 1.png" alt=""></div>
@@ -79,21 +83,24 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded",()=>{
-            let cont = 1;
-            let slider = document.querySelector("#slider > div");
+        document.addEventListener("DOMContentLoaded", () => {
+            let cont = 1; 
+            let slider = document.querySelector("#slider .container"); 
+
             let img = document.createElement("img");
             img.src = `img/pg2/slider/${cont}.png`;
-            slider.append(img)
+            slider.append(img);
+
             setInterval(() => {
                 cont++;
                 if (cont === 5) {
-                    cont = 1;  // Reset to the first image after the third
+                    cont = 1; 
                 }
-                img.src = `img/pg2/slider/${cont}.png`;  // Update image source
-            }, 3000);  // 1000 ms = 1 second interval
-            slider.append(img)
-        })
+                img.src = `img/pg2/slider/${cont}.png`;
+
+                
+            }, 2000);
+        });
     </script>
 </body>
 </html>
