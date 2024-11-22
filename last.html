@@ -19,7 +19,114 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section id="productos">
+            <div class="container">
+                <h1>Nuestros productos</h1>
+                <br>
+                <h2>¿De dónde se originan?</h2>
+                <p>Nuestros productos provienen de fuentes seleccionadas cuidadosamente, garantizando su calidad y autenticidad. Trabajamos con productores locales y proveedores de confianza, comprometidos con prácticas sostenibles y responsables. Cada artículo que ofrecemos tiene una historia única, que refleja el esfuerzo, la pasión y la dedicación de quienes lo crean. Desde su origen hasta tu hogar, nos aseguramos de que cada producto cumpla con los más altos estándares de excelencia.</p>
+                <img src="img/pg5/1.jpg" alt="">
+            </div>
+        </section>
+        <section id="consejo">
+            <h2>Consejos de Cuidado de las Flores</h2>
+            <div class="container">
+                <div>
+                    <div class="card">
+                        <p>✂️</p>
+                        <h3>Corta el tallo en ángulo</h3>
+                        <p>Cuando recibas un ramo, corta los tallos en un ángulo de 45 grados para mejorar la absorción de agua y alargar la vida de las flores.</p>
+                    </div>
+                    <div class="card">
+                        <p>💧</p>
+                        <h3>Usa agua tibia</h3>
+                        <p>El agua tibia es ideal para que las flores absorban mejor el agua. Evita el agua fría o muy caliente.</p>
+                    </div>
+                    <div class="card">
+                        <p>🔄</p>
+                        <h3>Cambia el agua regularmente</h3>
+                        <p>Para mantener las flores frescas, cambia el agua cada 2 días y limpia el jarrón para evitar bacterias.</p>            
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <p>🌞</p>
+                        <h3>Evita la luz solar directa</h3>
+                        <p>Coloca las flores en un lugar fresco y sin luz solar directa para evitar que se marchiten rápidamente.</p>
+                    </div>
+                    <div class="card">
+                        <p>🍃</p>
+                        <h3>Elimina las hojas sumergidas</h3>
+                        <p>Las hojas que tocan el agua se pudren rápidamente. Retíralas para evitar que contaminen el agua.</p>
+                    </div>
+                    <div class="card">
+                        <p>🌸</p>
+                        <h3>Usa conservantes florales</h3>
+                        <p>Si tienes conservante floral, agrégalo al agua para prolongar la frescura y la belleza de las flores.</p>            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mapa">
+            <div class="container">
+                <h2>Compra en nuestra tienda en fisico</h2>
+                <h3>Nos encontramos aqui</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d334.1102768260378!2d-3.602742307380848!3d37.1857253164317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce9dcd69685%3A0xc7c2a55d7f249ea6!2sFlores%20Mari!5e0!3m2!1ses!2ses!4v1732277548190!5m2!1ses!2ses" width="800" height="450"></iframe>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h1>Formulario de Pedido - Floristería</h1>
+                <p>Por favor, complete los siguientes campos para realizar su pedido.</p>
+
+                <form action="ruta_del_servidor" method="POST">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono"><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Detalles del pedido</legend>
+                        
+                        <label for="producto">Tipo de arreglo:</label>
+                        <select id="producto" name="producto" required>
+                            <option value="ramos">Ramos de flores</option>
+                            <option value="centros">Centros de mesa</option>
+                            <option value="plantas">Plantas en macetas</option>
+                            <option value="arreglos_personalizados">Arreglos personalizados</option>
+                        </select><br><br>
+
+                        <label for="fecha">Fecha de entrega:</label>
+                        <input type="date" id="fecha" name="fecha" required><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dirección de entrega</legend>
+                        
+                        <label for="direccion">Dirección de entrega:</label>
+                        <input type="text" id="direccion" name="direccion" required><br><br>
+
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+                    </fieldset>
+
+                    <button type="submit">Enviar pedido</button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html> 

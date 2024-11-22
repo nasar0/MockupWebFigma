@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes (FAQ) - Floristería</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #5b3d3d;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .faq-container {
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #6a4c4c;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #e0e0e0;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #6a4c4c;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            background-color: #d3d3d3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Preguntas Frecuentes (FAQ)</h1>
+
+    <div class="faq-container">
+        <!-- Pregunta 1 -->
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo puedo realizar un pedido?</div>
+            <div class="faq-answer">
+                Para realizar un pedido, simplemente visita nuestra sección de "Catálogo de Productos", selecciona el arreglo que deseas y agrega tus datos de contacto y entrega. ¡Y listo!
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="faq-item">
+            <div class="faq-question">¿Hacen entregas a domicilio?</div>
+            <div class="faq-answer">
+                Sí, realizamos entregas a domicilio en toda la ciudad y sus alrededores. También ofrecemos opciones de entrega nacional e internacional. Consulta nuestras tarifas de envío.
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="faq-item">
+            <div class="faq-question">¿Puedo personalizar mi arreglo floral?</div>
+            <div class="faq-answer">
+                ¡Por supuesto! Ofrecemos la opción de personalizar tus arreglos florales según tu preferencia. Puedes elegir el tipo de flores, colores y tamaño. Solo tienes que indicarlo al hacer tu pedido.
+            </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo cuido las flores una vez que las recibo?</div>
+            <div class="faq-answer">
+                Te recomendamos cortar los tallos en ángulo, cambiar el agua cada dos días y mantener las flores en un lugar fresco, alejado de la luz directa del sol. Para más detalles, consulta nuestra sección de "Consejos de Cuidado de las Flores".
+            </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="faq-item">
+            <div class="faq-question">¿Puedo devolver las flores si no estoy satisfecho?</div>
+            <div class="faq-answer">
+                Lamentablemente, debido a la naturaleza de nuestros productos, no aceptamos devoluciones. Sin embargo, si hay algún problema con tu pedido, por favor contáctanos y haremos todo lo posible para solucionar la situación.
+            </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="faq-item">
+            <div class="faq-question">¿Tienen opciones de pago en línea?</div>
+            <div class="faq-answer">
+                Sí, aceptamos pagos en línea a través de tarjetas de crédito y débito, así como otros métodos como PayPal. La plataforma es completamente segura para realizar tu compra.
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Script para desplegar/ocultar respuestas
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
+

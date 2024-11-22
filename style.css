@@ -43,7 +43,7 @@ a,h1,h2,h3,h4{
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
-
+    text-align: center;
 }
 p{
     font-family: "Open Sans", sans-serif;
@@ -167,7 +167,6 @@ nav{
 }
 
 .flor h2{
-    text-align: center;
     color: #2C3E50;
 }
 .flor > div> div{
@@ -228,7 +227,6 @@ nav{
         color: #FFFFFF;
         h1{
             color: #FFFFFF;
-            text-align: center;
             padding:3% 0;
             font-size: 40px;
         }
@@ -251,7 +249,7 @@ nav{
 }
 #ev{
 text-align: center;
-padding-top: 5%;
+padding-bottom: 5%;
 }
 #evento{
     color: #FFFFFF;
@@ -267,10 +265,114 @@ padding-top: 5%;
                     text-align: justify;
                     padding-left: 20px;
                 }
+                
             }
+            
         }
 }
+#bodas{
+    div>div{
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 45%;
+            padding: 2% ;
+        }
+        
+    }
+    p{
+        text-align: justify;
+        padding-bottom: 5%;
+    }
+    h2{
+        padding-bottom: 3%;
+    }
+}
 
+
+#hogar {
+    background-color: #FCFBF5;
+    height: 70vh;
+    color: #2C3E50;
+    div{ 
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 30%;
+            flex-direction: column;
+            a{
+                width: 50%;
+                margin: auto;
+            }
+        }
+    }
+    h2{
+        padding: 2% 0;
+    }
+    
+}
+.card {
+    background-color: #2C3E50;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 5%;
+    p{
+        color: #FFFFFF;
+    }
+    h3{
+        color: #F1C40F;
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    background-color: #F1C40F;
+    h3{
+        color:  #2C3E50;
+    }
+    p{
+        color: black;
+    }
+}   
+
+#consejo{
+    h2{
+        padding-bottom: 3%;
+    }
+    div{
+        div{
+            display: flex;
+            justify-content: space-between;
+            
+            div{
+                flex-direction: column;
+                width: 30%;
+                
+            }
+        }
+    }
+}
+#productos{
+    img{
+        margin: auto;
+        display: flex;
+    }
+}
+#mapa{
+    h2,h3{
+        padding-bottom: 3%;
+        color: #2C3E50;
+    }
+    iframe{
+        display: flex;
+        margin: auto;
+    }
+}
+        
 footer{
     background: black;
     margin-top: 10%;
