@@ -127,45 +127,42 @@ nav{
         }
     } 
 }
-#index{
-    section:nth-child(1) img{
-        height: 70vh;
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    section:nth-child(2){
-        color: #FFFFFF;
-        background-color: #C0392B;
-        div:nth-child(1){
-            display: flex;
-            justify-content: space-between;
-            div{
-                width: 45%;
+#banner img{
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mari{
+    color: #FFFFFF;
+    background-color: #C0392B;
+    div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 45%;
+        }
+        div:nth-child(2){
+            h2{
+                margin: 3% 0; 
             }
-            div:nth-child(2){
-                h2{
-                    margin: 3% 0; 
-                }
-                p{
-                    display: block; 
-                    width: 100%;
-                    font-size: 22px;
-                    margin: 3% 0; 
-                    text-align: justify;          
-                }
-                div{
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-bottom: 2%;
-                }
+            p{
+                display: block; 
+                width: 100%;
+                font-size: 22px;
+                margin: 3% 0; 
+                text-align: justify;          
+            }
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 2%;
             }
         }
     }
 }
-
 .flor h2{
     color: #2C3E50;
 }
@@ -372,7 +369,49 @@ padding-bottom: 5%;
         margin: auto;
     }
 }
+.rox{
+    display: flex;
+    justify-content: space-between;
+}    
+#art{
+    h2{
+        padding: 3% 0;
+        padding-top: 7%;
         
+    }
+}   
+#pre{
+    h2{
+        color: #5b3d3d;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .preg{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #2C3E50;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .preg:hover{
+        background-color: #e0e0e0;
+        color: #4e4c4c;
+    }
+    .rep{
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-left: 3px solid #2C3E50;
+    }
+}
+.rep.activar {
+    display: block;
+}
 footer{
     background: black;
     margin-top: 10%;
@@ -389,3 +428,48 @@ footer{
         }
     }
 }
+
+form{
+    padding-top: 4%;
+    div{
+        display: flex
+    }
+    fieldset{
+        padding: 1% 0;
+        margin: 2% 0;
+        width: 50%;
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+    }
+    buttom{
+        display: flex;
+        
+    }
+}
+@media (min-width: 1025px) and (max-width: 1800px){
+    #mari{
+        div:nth-child(1){
+            div:nth-child(2){
+                p{
+                    font-size: 17px; 
+                }
+            }
+        }
+    }
+    .flor p{
+        font-size: 15px; 
+    }
+    #florexotica{
+        font-size: 16px; 
+    }
+    
+}
+@media (min-width: 601px) and (max-width: 1024px){
+
+}
+@media (max-width: 600px) {
+
+}
+

@@ -8,19 +8,106 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <div><img src="img/image 1.png" alt=""></div>
             <div>
                 <a href="index.html">Inicio</a>
                 <a href="historia.html">Nuestra historia</a>
                 <a href="evento.html">Eventos</a>
                 <a href="articulos.html">Articulos</a>
-                <a href="last.html">undefined</a>
+                <a href="last.html">info</a>
             </div>
         </nav>
     </header>
     <main>
         
+        <section id="art">
+            <h1>Articulos</h1>
+            <div class="container">
+                <div>
+                    <div><h2>RAMOS DE NOVIA</h2></div>
+                    <div class="rox">
+                        <img src="img/pg4/1.png" alt="">
+                        <img src="img/pg4/2.png" alt="">
+                        <img src="img/pg4/3.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div><h2>FUNERARIOS</h2></div>
+                    <div class="rox">
+                        <img src="img/pg4/4.png" alt="">
+                        <img src="img/pg4/5.png" alt="">
+                        <img src="img/pg4/6.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div><h2>ROSAS</h2></div>
+                    <div class="rox">
+                        <img src="img/pg4/7.png" alt="">
+                        <img src="img/pg4/8.png" alt="">
+                        <img src="img/pg4/9.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div><h2>Arreglos Florales</h2></div>
+                    <div class="rox">
+                        <img src="img/pg4/10.png" alt="">
+                        <img src="img/pg4/11.png" alt="">
+                        <img src="img/pg4/12.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pre">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+
+            <div class="container">
+                <div class="item">
+                    <div class="preg">¿Cómo puedo realizar un pedido?</div>
+                    <div class="rep">
+                        Para realizar un pedido, simplemente visita nuestra sección de "Catálogo de Productos", selecciona el arreglo que deseas y agrega tus datos de contacto y entrega. ¡Y listo!
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="preg">¿Hacen entregas a domicilio?</div>
+                    <div class="rep">
+                        Sí, realizamos entregas a domicilio en toda la ciudad y sus alrededores. También ofrecemos opciones de entrega nacional e internacional. Consulta nuestras tarifas de envío.
+                    </div>
+                </div>
+
+   
+                <div class="item">
+                    <div class="preg">¿Puedo personalizar mi arreglo floral?</div>
+                    <div class="rep">
+                        ¡Por supuesto! Ofrecemos la opción de personalizar tus arreglos florales según tu preferencia. Puedes elegir el tipo de flores, colores y tamaño. Solo tienes que indicarlo al hacer tu pedido.
+                    </div>
+                </div>
+
+    
+                <div class="item">
+                    <div class="preg">¿Cómo cuido las flores una vez que las recibo?</div>
+                    <div class="rep">
+                        Te recomendamos cortar los tallos en ángulo, cambiar el agua cada dos días y mantener las flores en un lugar fresco, alejado de la luz directa del sol. Para más detalles, consulta nuestra sección de "Consejos de Cuidado de las Flores".
+                    </div>
+                </div>
+
+  
+                <div class="item">
+                    <div class="preg">¿Puedo devolver las flores si no estoy satisfecho?</div>
+                    <div class="rep">
+                        Lamentablemente, debido a la naturaleza de nuestros productos, no aceptamos devoluciones. Sin embargo, si hay algún problema con tu pedido, por favor contáctanos y haremos todo lo posible para solucionar la situación.
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="preg">¿Tienen opciones de pago en línea?</div>
+                    <div class="rep">
+                        Sí, aceptamos pagos en línea a través de tarjetas de crédito y débito, así como otros métodos como PayPal. La plataforma es completamente segura para realizar tu compra.
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -42,5 +129,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+     document.addEventListener("DOMContentLoaded", () => {
+        let items = document.querySelectorAll(".item")
+        items.forEach(item => {
+            let preg = item.querySelector(".preg");
+            let rep = item.querySelector(".rep");
+            preg.addEventListener("click",()=>{
+                if (rep.style.display === "block") {
+                    rep.style.display = "none";
+                } else {
+                    rep.style.display = "block";
+                }
+            })
+        })
+    });
+    </script>
+    
 </body>
 </html>

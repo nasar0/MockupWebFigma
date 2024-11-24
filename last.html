@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <div><img src="img/image 1.png" alt=""></div>
             <div>
                 <a href="index.html">Inicio</a>
                 <a href="historia.html">Nuestra historia</a>
                 <a href="evento.html">Eventos</a>
                 <a href="articulos.html">Articulos</a>
-                <a href="last.html">undefined</a>
+                <a href="last.html">info</a>
             </div>
         </nav>
     </header>
@@ -77,53 +77,52 @@
         </section>
         <section>
             <div class="container">
-                <h1>Formulario de Pedido - Floristería</h1>
-                <p>Por favor, complete los siguientes campos para realizar su pedido.</p>
+                <h2>Formulario de Pedido - Floristería</h2>
+                <h3>Por favor, complete los siguientes campos para realizar su pedido.</h3>
 
-                <form action="ruta_del_servidor" method="POST">
-                    <fieldset>
-                        <legend>Información personal</legend>
-                        
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required><br><br>
-
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required><br><br>
-
-                        <label for="telefono">Teléfono de contacto:</label>
-                        <input type="tel" id="telefono" name="telefono"><br><br>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Detalles del pedido</legend>
-                        
-                        <label for="producto">Tipo de arreglo:</label>
-                        <select id="producto" name="producto" required>
-                            <option value="ramos">Ramos de flores</option>
-                            <option value="centros">Centros de mesa</option>
-                            <option value="plantas">Plantas en macetas</option>
-                            <option value="arreglos_personalizados">Arreglos personalizados</option>
-                        </select><br><br>
-
-                        <label for="fecha">Fecha de entrega:</label>
-                        <input type="date" id="fecha" name="fecha" required><br><br>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Dirección de entrega</legend>
-                        
-                        <label for="direccion">Dirección de entrega:</label>
-                        <input type="text" id="direccion" name="direccion" required><br><br>
-
-                        <label for="ciudad">Ciudad:</label>
-                        <input type="text" id="ciudad" name="ciudad" required><br><br>
-
-                        <label for="codigo_postal">Código Postal:</label>
-                        <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
-                    </fieldset>
-
+                <form action="ruta_del_servidor" method="POST" class="container">
+                    <div>
+                        <fieldset>
+                            <legend>Información personal</legend>
+                            
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required><br><br>
+    
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+    
+                            <label for="telefono">Teléfono de contacto:</label>
+                            <input type="tel" id="telefono" name="telefono"><br><br>
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>Detalles del pedido</legend>
+                            <label for="producto">Tipo de arreglo:</label>
+                            <select id="producto" name="producto" required>
+                                <option value="ramos">Ramos de flores</option>
+                                <option value="centros">Centros de mesa</option>
+                                <option value="plantas">Plantas en macetas</option>
+                                <option value="arreglos_personalizados">Arreglos personalizados</option>
+                            </select><br><br>
+                            <label for="fecha">Fecha de entrega:</label>
+                            <input type="date" id="fecha" name="fecha" required><br><br>
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>Informacion de entrega</legend>
+                            
+                            <label for="direccion">Dirección de entrega:</label>
+                            <input type="text" id="direccion" name="direccion" required><br><br>
+    
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" required><br><br>
+    
+                            <label for="codigo_postal">Código Postal:</label>
+                            <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+                        </fieldset>
+                    </div>
                     <button type="submit">Enviar pedido</button>
-                </form>
+                </form> 
             </div>
         </section>
     </main>
