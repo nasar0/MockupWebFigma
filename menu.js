@@ -15,7 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.style.display = "none";        // Vuelve a mostrar el botón del menú
     });
 
-    // cerrar.addEventListener("mouseleave", () => {          
-    //     menu.style.display = "none";                 
-    // });
+   
 });
