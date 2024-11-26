@@ -3,142 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas Frecuentes (FAQ) - Floristería</title>
+    <title>Menu</title>
     <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+        *{
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
+            box-sizing: border-box;
         }
 
-        h1 {
-            color: #5b3d3d;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .faq-container {
-            width: 80%;
-            max-width: 900px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-        }
-
-        .faq-question {
-            font-size: 1.2rem;
+        a{
+            text-decoration: none;
+            margin: 20px 0;
+            color: white;
+            text-transform: uppercase;
             font-weight: bold;
-            color: #6a4c4c;
-            cursor: pointer;
-            margin: 0;
-            padding: 10px;
-            background-color: #f2f2f2;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            &:nth-child(2){
+                margin-top: 50px;
+            }
+            &:hover{
+                background-color: rgb(55, 98, 117);
+                color: white;
+            }
+        }
+        
+        body{
+            font-size: 15px;
+            font-family: "system-ui";
         }
 
-        .faq-question:hover {
-            background-color: #e0e0e0;
-        }
+        header#header{
+            padding: 50px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            div.brand{
+                h1,h2{
+                    font-size: 2rem;
+                    span{
+                        color: rgb(255, 123, 0);
+                    }
+                }
+            }
 
-        .faq-answer {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-left: 3px solid #6a4c4c;
-        }
+            nav.nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                    div.menu{
+                        text-align: right;
+                        button{
+                            font-size: 2rem;
+                            background-color: transparent;
+                            border: none;
+                            color: rgb(216, 4, 4);
+                            
+                        }
+                        div.navbar{
+                            display: flex;
+                            text-align: center;
+                            padding: 20px;
+                            flex-flow: column;
+                            min-height: 100vh; 
+                            color: white;
+                            background: rgb(0, 0, 0);
+                            min-width: 15%;
+                            position: fixed; 
+                            top: 0;
+                            left: 85%;
+                            z-index: 999;
+                            transition: opacity 0.5s ease, visibility 0.5s ease;
+                            opacity: 0;
+                            visibility: hidden;
+                            h2{
+                                span{
+                                    color:rgb(255, 123, 0);
+                                }
+                            }
+                        }
+                        .navbar.show {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        .navbar h2{
+                            font-size: 40px;
 
-        .faq-item.active .faq-answer {
-            display: block;
+                        }
+                }
+            }
         }
-
-        .faq-item.active .faq-question {
-            background-color: #d3d3d3;
+    @media (max-width: 1200px) {
+        .navbar {
+            width: 100% !important; 
+            left: 0 !important; 
         }
+    }
 
+      
     </style>
 </head>
 <body>
-
-    <h1>Preguntas Frecuentes (FAQ)</h1>
-
-    <div class="faq-container">
-        <!-- Pregunta 1 -->
-        <div class="faq-item">
-            <div class="faq-question">¿Cómo puedo realizar un pedido?</div>
-            <div class="faq-answer">
-                Para realizar un pedido, simplemente visita nuestra sección de "Catálogo de Productos", selecciona el arreglo que deseas y agrega tus datos de contacto y entrega. ¡Y listo!
+    <header id="header">
+        <nav class="nav">
+            <div class="brand">
+                <h1><span>X</span>prompt</h1>
             </div>
-        </div>
-
-        <!-- Pregunta 2 -->
-        <div class="faq-item">
-            <div class="faq-question">¿Hacen entregas a domicilio?</div>
-            <div class="faq-answer">
-                Sí, realizamos entregas a domicilio en toda la ciudad y sus alrededores. También ofrecemos opciones de entrega nacional e internacional. Consulta nuestras tarifas de envío.
+            <div class="menu">
+                <button>&#x268C;</button>
+                <div class="navbar">
+                    <button>&#10006;</button>
+                    <br>
+                    <h2><span>X</span>prompt</h2>
+                    <a href="#">Home</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Proyectos</a>
+                    <a href="#">Soporte</a>
+                    <a href="#">Contacto</a>
+                </div>
             </div>
-        </div>
-
-        <!-- Pregunta 3 -->
-        <div class="faq-item">
-            <div class="faq-question">¿Puedo personalizar mi arreglo floral?</div>
-            <div class="faq-answer">
-                ¡Por supuesto! Ofrecemos la opción de personalizar tus arreglos florales según tu preferencia. Puedes elegir el tipo de flores, colores y tamaño. Solo tienes que indicarlo al hacer tu pedido.
-            </div>
-        </div>
-
-        <!-- Pregunta 4 -->
-        <div class="faq-item">
-            <div class="faq-question">¿Cómo cuido las flores una vez que las recibo?</div>
-            <div class="faq-answer">
-                Te recomendamos cortar los tallos en ángulo, cambiar el agua cada dos días y mantener las flores en un lugar fresco, alejado de la luz directa del sol. Para más detalles, consulta nuestra sección de "Consejos de Cuidado de las Flores".
-            </div>
-        </div>
-
-        <!-- Pregunta 5 -->
-        <div class="faq-item">
-            <div class="faq-question">¿Puedo devolver las flores si no estoy satisfecho?</div>
-            <div class="faq-answer">
-                Lamentablemente, debido a la naturaleza de nuestros productos, no aceptamos devoluciones. Sin embargo, si hay algún problema con tu pedido, por favor contáctanos y haremos todo lo posible para solucionar la situación.
-            </div>
-        </div>
-
-        <!-- Pregunta 6 -->
-        <div class="faq-item">
-            <div class="faq-question">¿Tienen opciones de pago en línea?</div>
-            <div class="faq-answer">
-                Sí, aceptamos pagos en línea a través de tarjetas de crédito y débito, así como otros métodos como PayPal. La plataforma es completamente segura para realizar tu compra.
-            </div>
-        </div>
-
-    </div>
-
+        </nav>
+    </header>
     <script>
-        // Script para desplegar/ocultar respuestas
-        const faqItems = document.querySelectorAll('.faq-item');
+        
+        document.addEventListener("DOMContentLoaded", () => {       // Espera a que el DOM se haya cargado completamente
+            let navbar = document.getElementsByClassName("navbar")[0];      // Selecciona la barra de navegación
+            let menu = document.querySelector("div.menu button");       // Selecciona el botón del menú
+            let cerrar = document.querySelector("div.navbar");      // Selecciona la barra de navegación para el evento de cerrar
+    
+            navbar.classList.remove("show");        // Asegúrate de que la barra de navegación esté oculta al inicio
+    
+            
+            menu.addEventListener("click", () => {      // Agrega un evento click al botón del menú
+                navbar.classList.add("show");       // Muestra la barra de navegación al hacer clic en el menú
+                menu.style.display = "none";        // Oculta el botón del menú
+            });
+    
+            
+            cerrar.addEventListener("click", () => {        // Agrega un evento click a la barra de navegación para cerrarla
+                navbar.classList.remove("show");        // Oculta la barra de navegación
+                menu.style.display = "";        // Vuelve a mostrar el botón del menú
+            });
+    
+            cerrar.addEventListener("mouseleave", () => {            // Agrega un evento mouseleave a la barra de navegación para cerrarla
+                navbar.classList.remove("show");                // Oculta la barra de navegación
+                menu.style.display = "";                 // Vuelve a mostrar el botón del menú
 
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener("click", () => {
-                item.classList.toggle('active');
             });
         });
     </script>
-
+    
 </body>
 </html>
-

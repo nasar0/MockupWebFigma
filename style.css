@@ -24,11 +24,30 @@
 .venirse {
     animation: moveleft 2s ease-in-out forwards;
 }
-
+body{
+    overflow-x: hidden;
+}
 img{
     max-width: 100%;
 }
-
+#menus{
+    display: none;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(216, 4, 4);
+}
+#equis{
+    display: none;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(216, 4, 4);
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+}
 *{
     padding: 0;
     margin: 0;
@@ -104,7 +123,7 @@ header{
     box-shadow: 0px 9px 11px -1px rgba(0,0,0,0.67);
 }
 body{
-    background: #F4F1DE;
+    background: #FCFBF5;
 }
 section{
     margin: 6% 0;
@@ -467,9 +486,43 @@ form{
     
 }
 @media (min-width: 601px) and (max-width: 1024px){
+    #menus{
+        display: block;
 
-}
-@media (max-width: 600px) {
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        div:nth-child(1){
+            width: 30%;
+        }
+        div:nth-child(2){
+            width: 50%;
+            height: 100vh;
+            margin-left: 30%;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            z-index: 999;
+            top: 0;
+            padding-top: 5%;
+            left: 45%;
+            background-color: #F4F1DE;
+            #equis{
+                display: block;
+                
+            }
+            a{
+                display: flex;
+                align-items: flex-start;
+                padding: 1% 5%;
 
+            }
+        } 
+    }
 }
+
 
